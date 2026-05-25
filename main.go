@@ -20,6 +20,7 @@ func main() {
 	var port, numStories int
 	flag.IntVar(&port, "port", 3000, "the port to start the web server on")
 	flag.IntVar(&numStories, "num_stories", 30, "the number of top stories to display")
+	
 	flag.Parse()
 
 	tpl := template.Must(template.ParseFiles("./index.gohtml"))
